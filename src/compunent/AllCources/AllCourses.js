@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Course from './../Course/Course';
+import './AllCouses.css';
 
 const AllCourses = () => {
     const [courses,setCourses] = useState([])
@@ -10,6 +11,7 @@ const AllCourses = () => {
     },[])
     return (
         <div className="container">
+            <h1 className="margin"><strong>Our All <span className="text-warning">Courses</span></strong></h1>
             <div className="row">
             {
                 courses.map(course => <Course course={course}></Course>)

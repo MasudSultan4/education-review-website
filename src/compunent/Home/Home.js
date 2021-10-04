@@ -1,10 +1,12 @@
 import React from 'react';
-import AllCourses from '../AllCources/AllCourses';
+import Show from '../Show3Component/Show';
+import Slider from '../Slider/Slider';
 
 const Home = () => {
     return (
         <div>
-            <AllCourses></AllCourses>
+            <Slider></Slider>
+           <Show></Show>  
         </div>
     );
 };

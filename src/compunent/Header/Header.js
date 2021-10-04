@@ -17,7 +17,7 @@ const Header = () => {
             <div className="menu-container ">
               <ul className="d-flex align-items-end justify-content-end">
               <Link className="items" to="/home">Home</Link>
-              <Link className="items" to="/searvis">Service</Link>
+              <Link className="items" to="/courses">Courses</Link>
               <Link className="items" to="/about">About</Link> 
               </ul>
             </div>
@@ -25,6 +25,7 @@ const Header = () => {
         </div>
       </div>
     </div>
+    
         </div>
     );
 };

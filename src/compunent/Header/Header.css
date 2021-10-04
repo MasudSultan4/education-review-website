@@ -1,0 +1,16 @@
+.items {
+  list-style: none;
+  margin-right: 30px;
+  font-size: 22px;
+  font-weight: 500;
+  color: black;
+  cursor: pointer;
+  padding: 5px;
+  text-decoration: none;
+}
+.items:hover {
+  color: rgb(221, 5, 5);
+}
+.MenuBar-container {
+  background-color: wheat;
+}

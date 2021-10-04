@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import About from './compunent/About/About';
 import AllCourses from './compunent/AllCources/AllCourses';
+import Contact from './compunent/Contact/Contact';
 import Error from './compunent/Error/Error';
 import Footer from './compunent/Footer/Footer';
 import Header from './compunent/Header/Header';
@@ -25,6 +26,9 @@ function App() {
           </Route>
           <Route path="/about">
             <About></About>
+          </Route>
+          <Route path="/contact">
+            <Contact></Contact>
           </Route>
           <Route path="*">
             <Error></Error>

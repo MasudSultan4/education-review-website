@@ -14,7 +14,7 @@ const AllCourses = () => {
             <h1 className="margin"><strong>Our All <span className="text-warning">Courses</span></strong></h1>
             <div className="row">
             {
-                courses.map(course => <Course course={course}></Course>)
+                courses.map(course => <Course key={course.courseId} course={course}></Course>)
             }
             </div>
         </div>

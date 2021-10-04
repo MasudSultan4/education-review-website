@@ -1,34 +1,23 @@
 import React from 'react';
-import { Button, Card, ListGroup, ListGroupItem } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Button, Card } from 'react-bootstrap';
 import './Course.css';
 const Course = (props) => {
-    const { id,img, name, rating, price, title, course_timing, students_enrolled } = props.course
-   
-    return (
+    const { img, name, price,course_timing, students_enrolled,lessons } = props.course
 
-        <div className="col-md-4">
+    return (
+        <div className="col-md-4 mb-5">
             <Card style={{ width: '18rem' }}>
                 <Card.Img variant="top" src={img} />
                 <Card.Body>
-                    <h5>Subject: {name}</h5>
-                    <p><small>{title}</small></p>
-                </Card.Body>
-                <ListGroup className="list-group-flush">
-                    <ListGroupItem><strong>Rating:</strong>{rating}</ListGroupItem>
-                    <ListGroupItem><strong>Course-Timing:</strong> {course_timing}</ListGroupItem>
-                    <div className="">
-                    <ListGroupItem className="d-flex mb-0">
-                        <p className="gaping"> <strong>Price:</strong>${price}</p>
-                        <p><strong>Enroll:</strong>{students_enrolled}</p>
-                    </ListGroupItem>
-                    </div>
-
-                </ListGroup>
-                <Card.Body>
-                <Link to={`/details/${id}`}>
-                    <Button className="btn btn-success">Details</Button>
-                  </Link>
+                    <Card.Title><strong>Subject:</strong> {name}</Card.Title> <hr />
+                    
+                    <h5><strong>Course-Timing:</strong> {course_timing}</h5><hr />
+                    <div className="d-flex">
+                        <h5 className="gaping"> <strong>Price:</strong>${price}</h5>
+                        <h5><strong>Enroll:</strong>{students_enrolled}</h5>
+                    </div><hr />
+                    <p><strong>Lesson:</strong> {lessons}</p><hr />
+                    <Button variant="primary">Enroll</Button>
                 </Card.Body>
             </Card>
         </div>

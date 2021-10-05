@@ -1,6 +1,10 @@
 .ContactForm {
-  margin-top: 100px;
   background-color: gray;
+  padding: 40px;
+}
+
+#contact-form {
+  margin-top: 100px;
 }
 
 .formRow {

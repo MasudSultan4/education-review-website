@@ -8,7 +8,7 @@ const Show = () => {
         .then(res => res.json())
         .then(data => setShow(data))
     },[])
-    const showCart = courses.slice(0,6)
+    const showCart = courses.slice(0,4)
     return (
         
           <div className="container">
